@@ -1,0 +1,244 @@
+:root {
+  --text-color1: white;
+  --background-color1: rgba(196, 198, 206, 0.644);
+}
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+h1 {
+  position: absolute;
+  top: 10vh;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--text-color1);
+  font-size: 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  animation: shake 2s ease 0.5s infinite;
+}
+span {
+  animation: fun 11s linear 0s infinite;
+}
+.start {
+  position: relative;
+  top: 40vh;
+  left: 37vw;
+  width: 20vw;
+  height: 10vh;
+  border-radius: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: var(--text-color1);
+  font-weight: 600;
+  background: var(--background-color1);
+  text-decoration: none;
+  animation: start 6s ease-in-out infinite 0s;
+}
+.ball {
+  border: 0.5px solid var(--background-color1);
+  width: 4vh;
+  height: 4vh;
+  border-radius: 50%;
+  padding: 2px;
+  margin: 5px;
+  background-color: var(--background-color2);
+  box-shadow: 2px 0px 7px 2px black;
+  z-index: -1;
+}
+.ball:first-child {
+  position: absolute;
+  top: 10vh;
+  left: 47vw;
+  animation: ball1 10s linear infinite 0s;
+}
+.ball:nth-of-type(2) {
+  position: absolute;
+  top: 23vh;
+  left: 1vw;
+  animation: ball2 10s linear infinite 0s;
+}
+.ball:nth-of-type(3) {
+  position: absolute;
+  top:23vh;
+  left:92vw;
+  animation: ball3 10s linear infinite 0s;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color1);
+}
+.hidden {
+  display: none;
+}
+@keyframes ball1 {
+  0% {
+    top: 10vh;
+    left: 47vw;
+  }
+  25% {
+    top:92vh;
+    left:47vw;
+  }
+  50% {
+    top: 10vh;
+    left: 47vw;
+  }
+  75% {
+    left: 47vw;
+    top: 92vh;
+  }
+  100% {
+    left: 47vw;
+    top: 10vh;
+  }
+}
+@keyframes ball2 {
+  25% {
+    top: 92vh;
+    left: 47vw;
+  }
+  50% {
+    top:23vh;
+    left:92vw;
+  }
+  75% {
+    top: 1vh;
+    left: 47vw;
+  }
+  100% {
+    left: 1vw;
+    top: 23vh;
+  }
+}
+@keyframes ball3 {
+  25% {
+    top: 92vh;
+    left: 47vw;
+  }
+  50% {
+    top:2vh;
+    left:92vw;
+  }
+  75% {
+    top: 1vh;
+    left: 47vw;
+  }
+  100% {
+    top:23vh;
+    left:92vw;
+  }
+}
+@keyframes start {
+  0% {
+    width: 20vw;
+    height: 10vh;
+  }
+  50% {
+    width: 21vw;
+    height: 11vh;
+    font-size: 2rem;
+  }
+}
+@keyframes fun {
+  0% {
+    color: aliceblue;
+  }
+  25% {
+    color: rgb(174, 182, 183);
+  }
+  50% {
+    color: rgb(85, 79, 79);
+  }
+  75% {
+    color: rgb(0, 0, 0);
+  }
+}
+@keyframes shake {
+  0% {
+    top: 27vh;
+  }
+  10% {
+    top: 28vh;
+  }
+  20% {
+    top: 27vh;
+  }
+  30% {
+    top: 28vh;
+  }
+  40% {
+    top: 27vh;
+  }
+  50% {
+    top: 28vh;
+  }
+  60% {
+    top: 27vh;
+  }
+  70% {
+    top: 28vh;
+  }
+  80% {
+    top: 27vh;
+  }
+  90% {
+    top: 28vh;
+  }
+  100% {
+    top: 27vh;
+  } 
+}
+
+@media (min-width: 2000px) {
+  h1 {
+    left: 40.5vw;
+  }
+}
+@media (max-width: 1500px) {
+  h1 {
+    left: 36.5vw;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  h1 {
+    font-size: 3rem;
+    left: 35vw;
+  }
+  #start {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  h1 {
+    left: 30vw;
+  }
+}
+@media (max-width: 450px) {
+  h1 {
+    font-size: 2rem;
+    top: 33vh;
+  }
+  a {
+    font-size: 1rem;
+  }
+  @keyframes start {
+    0% {
+      width: 20vw;
+      height: 10vh;
+    }
+    50% {
+      width: 26vw;
+      height: 15vh;
+      font-size: 1.5rem;
+    }
+  }
+  h1 {
+    left: 25vw;
+  }
+}
+

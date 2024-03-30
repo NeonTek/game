@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="kids.ico"/>
+    <link rel="stylesheet" href="quiz.css"/>
+    <title>Kids Computer learning game computer history quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="background-song" src="pending-in-movement-163656.mp3" autoplay loop></audio>
+    <audio id="correct-sound" src="ping-82822.mp3"></audio>
+    <audio id="wrong-sound" src="error-when-entering-the-game-menu-132111.mp3"></audio>
+    <audio id="victory-sound" src="short-background-music-for-video-vlog-dance-summer-slap-house-36-sec-196702.mp3"></audio>
+    <audio id="lose-sound" src="emotional-cinematic_34sec-186758.mp3"></audio>
+    <video src="kids_-_18506 (Original).mp4" id="background" class="background" autoplay loop></video>
+    <div class="gangham hidden">Well done. Keep it up!</div>
+    <fieldset id="question-area" class="question-field">
+      <a href="menu.html"><button class="utility-button">Back</button></a>
+      <div id="scoreboard" class="scoreboard"></div>
+      <p id="question" class="question">Get Ready</p>
+      <div id="choices">
+        <button id="A" class="choice">1</button>
+        <button id="B" class="choice">2</button>
+        <button id="C" class="choice">3</button>
+        <button id="D" class="choice">4</button>
+      </div>
+    </fieldset>
+    <div id="name-menu" class="menu hidden">
+      <input id="name" type="text" placeholder="Please Enter Your Full Names."/>
+      <button id="submit-btn" class="button">Submit</button>
+    </div>
+    <div id="work"  class="zoomIn hidden"><p></p>
+      <div class='container1'>
+        <div class='tear'></div>
+        <div class='tear2'></div>
+        <div class='face'>
+            <div class='eyebrow'>︶</div>
+            <div class='eyebrow'>︶</div>
+            <div class='eye'></div>
+            <div class='eye'></div>
+            <div class='mouth'></div>
+          <p>Work harder</p>
+        </div>
+      </div>
+      </div>
+    <button id="mute-btn" class="utility-button">mute</button>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
