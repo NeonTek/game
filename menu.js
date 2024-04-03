@@ -1,3 +1,5 @@
+/Galatians 5:22-23 But the spirit produces love, joy, peace, patience, kindness, goodness, faithfulness, humility and self control. Against such things there is no law./
+
 const video = document.getElementById("background");
 const homepage = document.getElementById("home");
 const quizButton = document.getElementById("quiz-btn");
